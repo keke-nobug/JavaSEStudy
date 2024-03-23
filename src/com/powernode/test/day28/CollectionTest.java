@@ -26,6 +26,7 @@ public class CollectionTest {
             System.out.println(it.next());
         }
 
+
         System.out.println("===============================");
 
         HashSet<Integer> integerHashSet = new HashSet<>();//无序不可重复
@@ -45,7 +46,7 @@ public class CollectionTest {
         }
         System.out.println(integerHashSet.size());
 
-        System.out.println("===============================");
+        System.out.println("===============================这里");
 
         ArrayList<Integer> list = new ArrayList<>(integerHashSet); //set集合转为list集合！
         for (Integer i:list
@@ -89,6 +90,13 @@ public class CollectionTest {
         hashMap.put(666,"e");
         hashMap.put(111,"e");
         hashMap.put(17,"e");
+
+        hashMap.remove(1,"a");
+        int maxValue = Integer.MAX_VALUE;
+
+        System.out.println("在这里");
+        System.out.println(hashMap.get(100)); // 不命中key返回null
+
 
         Set<Map.Entry<Integer, String>> entries = hashMap.entrySet();
         for (Map.Entry<Integer, String> node: entries
