@@ -9,10 +9,13 @@ package test;
  * @Version: 1.0
  */
 public class MyLinkedList {
-    int size;
-    ListNode node = new ListNode(0);
+
 
     public static void main(String[] args) {
+        ListNode node1 = new ListNode();
+        ListNode node2 = new ListNode(0);
+        System.out.println(node1.val);
+        System.out.println(node2.val);
 
     }
 
