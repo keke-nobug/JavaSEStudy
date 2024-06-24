@@ -1,5 +1,8 @@
 package test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @BelongsProject: JavaSEStudy
  * @BelongsPackage: test
@@ -17,6 +20,12 @@ public class ArrayDemo {
         }
 
         System.out.println("chenggong");
+
+        HashMap<Integer, Integer> map = new HashMap<>();
+        System.out.println(map.size());
+        map.put(1,1);
+        System.out.println(map.size());
+
     }
     public static int[] m1() {
         return new int[2];
