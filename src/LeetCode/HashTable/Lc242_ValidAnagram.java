@@ -14,8 +14,8 @@ import java.util.HashMap;
 public class Lc242_ValidAnagram {
     public static void main(String[] args) {
 
-        String s = "anagram";
-        String t = "nagaram";
+        String s = "rat";
+        String t = "car";
 
 
         HashMap<Character,Integer> window = new HashMap<>();
@@ -25,11 +25,11 @@ public class Lc242_ValidAnagram {
             window.put(c, window.getOrDefault(c,0) + 1);
         }
         for (char c : t.toCharArray()) {
-            need.put(c, window.getOrDefault(c,0) + 1);
+            need.put(c, need.getOrDefault(c,0) + 1);
         }
 
         for (char c : s.toCharArray()) {
-            System.out.println(window.get(c) + "    " + need.get(c));
+            System.out.println(c + ":" + window.get(c) + "    " + need.get(c));
             }
     }
 }
