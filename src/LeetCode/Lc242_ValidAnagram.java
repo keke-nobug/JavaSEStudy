@@ -1,4 +1,4 @@
-package LeetCode.HashTable;
+package LeetCode;
 
 import java.sql.SQLOutput;
 import java.util.HashMap;

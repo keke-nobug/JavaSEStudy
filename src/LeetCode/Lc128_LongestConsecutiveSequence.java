@@ -1,4 +1,4 @@
-package LeetCode.HashTable;
+package LeetCode;
 
 import java.util.*;
 
@@ -27,7 +27,6 @@ public class Lc128_LongestConsecutiveSequence {
         for (int num : nums) {
             set.add(num);
         }
-
         int ans = 0;
 
         // 遍历set，找到每段num不连续的起点
