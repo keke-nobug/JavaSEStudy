@@ -19,5 +19,7 @@ public class HashSetDemo {
         System.out.println(hashSet.add(1));
         System.out.println(hashSet.size());
 
+        hashSet.contains(1);
+
     }
 }

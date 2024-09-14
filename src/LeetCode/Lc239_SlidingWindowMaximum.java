@@ -1,7 +1,6 @@
 package LeetCode;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
+import java.util.*;
 
 /**
  * @BelongsProject: JavaSEStudy
@@ -14,6 +13,7 @@ import java.util.Deque;
 public class Lc239_SlidingWindowMaximum {
     public static void main(String[] args) {
         int[] nums = {1, 3, -1, -3, 5, 3, 6, 7};
+        // Arrays.copyOfRange(nums,0,2);
         int k = 3;
         int[] ans = maxSlidingWindow(nums, k);
         for (int x :
@@ -31,7 +31,7 @@ public class Lc239_SlidingWindowMaximum {
         for (int i = 0; i < n; i++) {
             // 1. 入
             while (!q.isEmpty() && nums[q.getLast()] <= nums[i]) {
-                q.removeLast(); // 维护 q 的单调性
+                q.removeLast(); // 维护 q 的单调性, 尾进头出，从首尾按小到大排序维护
             }
             q.addLast(i); // 入队
             // 2. 出

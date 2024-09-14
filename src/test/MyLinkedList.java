@@ -1,5 +1,7 @@
 package test;
 
+import LeetCode.ListNode;
+
 /**
  * @BelongsProject: JavaSEStudy
  * @BelongsPackage: test
@@ -14,18 +16,15 @@ public class MyLinkedList {
     public static void main(String[] args) {
         ListNode node1 = new ListNode();
         ListNode node2 = new ListNode(0);
+        ListNode node3 = new ListNode(1);
+        ListNode head = node2;
+        head.next = node3;
+
+        ListNode dummyHead = head;
+        System.out.println(dummyHead.next.val);
         System.out.println(node1.val);
         System.out.println(node2.val);
 
     }
 
-}
-class ListNode {
-    int val;
-    ListNode next;
-// 构造函数
-    public ListNode() {};
-    public ListNode(int val) {
-        this.val = val;
-    }
 }

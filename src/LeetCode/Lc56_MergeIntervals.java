@@ -28,6 +28,8 @@ public class Lc56_MergeIntervals {
             }
         });
 
+        // Arrays.sort(intervals, (o1, o2) -> o1[0] - o2[0]); // 简写这样
+
         // 存放合并后的结果
         List<int[]> ans = new ArrayList<>();
 
