@@ -25,6 +25,20 @@ public class MyLinkedList {
         System.out.println(node1.val);
         System.out.println(node2.val);
 
+        System.out.println("=============================");
+
+
+        ListNode head2 = new ListNode(1,new ListNode(2,new ListNode(3)));
+        ListNode cur2 = head2;
+        int n = 0;
+        ListNode dummyHead2 = new ListNode(0,head2);
+        ListNode cur3 = dummyHead2;
+        while (dummyHead2 != null) {
+            n++;
+            dummyHead2 = dummyHead2.next;
+        }
+        System.out.println(cur3.val);
+        System.out.println(cur3.next.val);
     }
 
 }
