@@ -1,5 +1,7 @@
 package LeetCode;
 
+import LeetCode.DS.ListNode;
+
 import java.util.PriorityQueue;
 import java.util.Queue;
 

@@ -1,5 +1,7 @@
 package LeetCode;
 
+import LeetCode.DS.ListNode;
+
 /**
  * @BelongsProject: JavaSEStudy
  * @BelongsPackage: LeetCode

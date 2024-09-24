@@ -1,6 +1,9 @@
 package test;
 
-import LeetCode.ListNode;
+import LeetCode.DS.ListNode;
+
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * @BelongsProject: JavaSEStudy
@@ -14,6 +17,9 @@ public class MyLinkedList {
 
 
     public static void main(String[] args) {
+
+        Queue<Integer> linkedList = new LinkedList<>();
+
         ListNode node1 = new ListNode();
         ListNode node2 = new ListNode(0);
         ListNode node3 = new ListNode(1);
