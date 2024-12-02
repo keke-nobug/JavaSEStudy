@@ -11,14 +11,20 @@ package test;
 public class forDemo {
     public static void main(String[] args) {
         int i = 0;
-        for ( i = 0; i < 10; i++) {
-            System.out.println(i);
+        System.out.println(i);
+
+        System.out.println("==============================");
+
+        for (int j = 0; j < 10; ++j) {
+            System.out.println(j);
         }
 
         System.out.println("==============================");
 
-        for (int j = 0; j < 10; ++j){
-            System.out.println(j);
+        int k = 3;
+        while (k-- > 0) {
+            System.out.println(k);
         }
+
     }
 }

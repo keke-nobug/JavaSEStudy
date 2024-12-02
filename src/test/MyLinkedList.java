@@ -2,8 +2,8 @@ package test;
 
 import LeetCode.DS.ListNode;
 
+import java.util.ArrayDeque;
 import java.util.LinkedList;
-import java.util.Queue;
 
 /**
  * @BelongsProject: JavaSEStudy
@@ -18,7 +18,17 @@ public class MyLinkedList {
 
     public static void main(String[] args) {
 
-        Queue<Integer> linkedList = new LinkedList<>();
+        LinkedList<Integer> linkedList = new LinkedList<>();
+        linkedList.add(1);
+        linkedList.add(2);
+        linkedList.add(3);
+        System.out.println(linkedList.get(2));
+        System.out.println(linkedList.size());
+        linkedList.poll();
+        System.out.println(linkedList.get(0));
+        System.out.println(linkedList.size());
+        System.out.println("=============================");
+        ArrayDeque<Integer> arrayDeque = new ArrayDeque<>();
 
         ListNode node1 = new ListNode();
         ListNode node2 = new ListNode(0);
