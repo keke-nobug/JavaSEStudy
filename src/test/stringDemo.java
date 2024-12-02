@@ -31,13 +31,20 @@ public class stringDemo {
         int lString = s.length();
 
 //      字符串转数组
+        System.out.println("===========================");
         char[] chars = s.toCharArray();
+
+        for (int k = 0; k < lString; k++) {
+            System.out.println(chars[k]);
+        }
 
 //      数组长度方法
         int lArray = chars.length;
 
         StringBuffer stringBuffer = new StringBuffer();
         stringBuffer.append(c);
+
+        System.out.println("==========stringBuffer==========");
         System.out.println(stringBuffer);
         stringBuffer.delete(0, 1); // 左闭右开
         System.out.println(stringBuffer);
